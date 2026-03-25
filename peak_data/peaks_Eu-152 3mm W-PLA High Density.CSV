@@ -1,0 +1,6 @@
+Centroid,  Net_Area,   Net_Area,      Peak, FWHM,   FWHM,Reduced, ROI_Total,ROI, File,         ,     ,     , Nuclide, Photopeak_Energy, ROI_Lower_Energy, ROI_Upper_Energy, Color, User_Label, Continuum_Type, Skew_Type, Continuum_Coefficients, Skew_Coefficients
+     keV,    Counts,Uncertainty,       CPS,  keV,Percent,Chi_Sqr,    Counts,ID#, Name, LiveTime, Date, Time,        ,              keV,              keV,              keV, (css),           ,               ,          ,                       ,                  
+  244.12,  163436.4,  970.9    ,9.0798e+001,25.26, 10.35%,   0.96,  741955.9,  1,  ,1800.000,11-Feb-2026,11:32:57,Eu152,244.70,206.156,277.08,#c0c0c0,,Linear,NoSkew,206.156 8349.458 -5.428943,
+  344.08,  691737.1,  2050.2   ,3.8430e+002,31.30,  9.10%,   1.05,  1295258.0,  2,  ,1800.000,11-Feb-2026,11:32:57,Eu152,344.28,292.259,388.118,#c0c0c0,,Quardratic,NoSkew,292.259 8045.641 -45.67746 0.1436667,
+  778.68,  173081.1,  1820.9   ,9.6156e+001,47.92,  6.15%,   0.99,  472248.9,  3,  ,1800.000,11-Feb-2026,11:32:57,Eu152,778.90,712.491,833.234,#c0c0c0,,Quardratic,NoSkew,712.491 2788.761 -7.126176 0.02534415,
+  965.84,  165653.8,  2988.5   ,9.2030e+001,56.71,  5.87%,   0.99,  302676.6,  4,  ,1800.000,11-Feb-2026,11:32:57,Eu152,964.08,913.363,1022.78,#C0C0C0,,Quardratic,NoSkew,913.363 1549.348 -5.816508 0.01383725,

@@ -1,0 +1,162 @@
+XStrahl300 - TEMPLATE                                                  #!GUI1.0
+AIR521ICRU
+0, 0, 0, 0, 0, 2, 0,  IWATCH ETC.
+20000000, 33, 97, 20, 1, 50, 0, 0,  NCASE ETC.
+-1, 13, 5, 5, -1, 0,  0.0, 0.0, 0.0, 0.0,  IQIN, ISOURCE + OPTIONS
+0, MONOENERGETIC
+0.080
+0, 0, 0.521, 0.001, 0, 0, ,  0 , ECUT,PCUT,IREJCT,ESAVE
+1, 1, 20, 1, 7,  PHOTON FORCING
+3, 4, 6, 7,  SCORING INPUT
+1, 0
+20, 
+1, 0
+20, 
+1, 0
+20, 
+0,  DOSE COMPONENTS
+0.0, Z TO FRONT FACE
+*********** start of CM XTUBE with identifier ANODE  ***********
+20, RMAX
+Anode
+-2.5, 5, ZMIN, ZTHICK
+30, ANGLE
+1, # LAYERS
+0.2, 0
+0.521, 0.001, 1, 0, 
+W521ICRU
+0.521, 0.001, 0, 1, 
+VACUUM
+0.521, 0.001, 0, 2, 
+STEEL521ICRU
+*********** start of CM SLABS with identifier VAC  ***********
+20, RMAX
+VAC
+1, NSLABS
+2.5, ZMIN
+5, 0.521, 0.001, 0, 3, 0
+VACUUM
+*********** start of CM BLOCK with identifier TUBE  ***********
+20, RMAX
+TUBE
+7.5, 8, -100, ZMIN, ZMAX, ZFOCUS
+1, # OF SUBREGIONS
+4, NUMBER OF POINTS IN SUBREGION 1
+-0.75, -0.75, 
+0.75, -0.75, 
+0.75, 0.75, 
+-0.75, 0.75, 
+20, 20, -20, -20, 
+0.521, 0.001, 0, 4, 
+0.521, 0.001, 0, 5, 
+VACUUM
+0.521, 0.001, 0, 6, 
+STEEL521ICRU
+*********** start of CM SLABS with identifier WINDOW  ***********
+0.75, RMAX
+WINDOW
+1, NSLABS
+8, ZMIN
+0.015, 0.521, 0.001, 0, 7, 0
+BE521ICRU
+*********** start of CM FLATFILT with identifier FILTER  ***********
+0.75, RMAX
+FILTER
+8.1, ZMIN
+1, NUMBER OF LAYERS
+1, 0.1, # CONES, ZTHICK OF LAYER 1
+0.75, 
+0.75, 
+0.521, 0.001, 0, 8, 
+AL521ICRU
+0.521, 0.001, 0, 9, 
+AL521ICRU
+*********** start of CM BLOCK with identifier COLLIMAT  ***********
+20, RMAX
+TUBE
+8.4, 9, 1000, ZMIN, ZMAX, ZFOCUS
+1, # OF SUBREGIONS
+4, NUMBER OF POINTS IN SUBREGION 1
+-0.75, -0.75, 
+0.75, -0.75, 
+0.75, 0.75, 
+-0.75, 0.75, 
+20, 20, -20, -20, 
+0.521, 0.001, 0, 4, 
+0.521, 0.001, 0, 5, 
+AIR521ICRU
+0.521, 0.001, 0, 6, 
+STEEL521ICRU
+*********** start of CM FLATFILT with identifier APPLICAT ***********
+10, RMAX
+APPLICAT
+9, ZMIN
+4, NUMBER OF LAYERS
+2, 1, # CONES, ZTHICK OF LAYER 1
+1.5, 5, 
+1.5, 5, 
+3, 0.1, # CONES, ZTHICK OF LAYER 2
+1.5, 1.7, 5, 
+1.5, 1.7, 5, 
+3, 10, # CONES, ZTHICK OF LAYER 3
+1.5, 1.7, 1.9, 
+2, 2.2, 2.5, 
+2, 10, # CONES, ZTHICK OF LAYER 4
+2, 2.2, 
+2.5, 2.7, 
+0.01, 0.001, 0, 1, 
+AIR521ICRU
+0.01, 0.001, 0, 1, 
+STEEL521ICRU
+0.01, 0.001, 0, 1, 
+AIR521ICRU
+0.01, 0.001, 0, 1, 
+AIR521ICRU
+0.01, 0.001, 0, 1, 
+AL521ICRU
+0.01, 0.001, 0, 1, 
+CU521ICRU
+0.01, 0.001, 0, 1, 
+AIR521ICRU
+0.01, 0.001, 0, 1, 
+AIR521ICRU
+0.01, 0.001, 0, 1, 
+AL521ICRU
+0.01, 0.001, 0, 1, 
+CU521ICRU
+0.01, 0.001, 0, 1, 
+AIR521ICRU
+0.01, 0.001, 0, 1, 
+AIR521ICRU
+0.01, 0.001, 0, 1, 
+AL521ICRU
+0.01, 0.001, 0, 1, 
+AIR521ICRU
+*********************end of all CMs*****************************
+ #########################
+ :Start MC Transport Parameter:
+ 
+ Global ECUT= 0.521
+ Global PCUT= 0.001
+ Global SMAX= 0.2
+ ESTEPE= 0.15
+ XIMAX= 0.5
+ Boundary crossing algorithm= EXACT
+ Skin depth for BCA= 0
+ Electron-step algorithm= PRESTA-II
+ Spin effects= On
+ Brems angular sampling= KM
+ Brems cross sections= BH
+ Bound Compton scattering= On
+ Compton cross sections= default
+ Pair angular sampling= Simple
+ Pair cross sections= BH
+ Photoelectron angular sampling= On
+ Rayleigh scattering= On
+ Atomic relaxations= EADL
+ Electron impact ionization= On
+ Photon cross sections= xcom
+ Photon cross-sections output= On
+ 
+ :Stop MC Transport Parameter:
+ #########################

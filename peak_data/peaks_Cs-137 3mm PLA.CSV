@@ -1,0 +1,3 @@
+Centroid,  Net_Area,   Net_Area,      Peak, FWHM,   FWHM,Reduced, ROI_Total,ROI, File,         ,     ,     , Nuclide, Photopeak_Energy, ROI_Lower_Energy, ROI_Upper_Energy, Color, User_Label, Continuum_Type, Skew_Type, Continuum_Coefficients, Skew_Coefficients
+     keV,    Counts,Uncertainty,       CPS,  keV,Percent,Chi_Sqr,    Counts,ID#, Name, LiveTime, Date, Time,        ,              keV,              keV,              keV, (css),           ,               ,          ,                       ,                  
+  661.66, 1755268.7,  3985.9   ,9.7515e+002,47.70,  7.21%,   1.11,  1808717.8,  1,  ,1800.000,10-Feb-2026,12:26:55,Cs137,661.66,593.871,740.661,#00B9FF,,Cubic,NoSkew,593.871 642.6449 6.013549 -0.195423 8.683112E-4,
